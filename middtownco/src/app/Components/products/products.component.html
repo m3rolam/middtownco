@@ -1,0 +1,23 @@
+<div class="container-fluid my-2">
+  <div class="row">
+    <div class="col-4 my-2" *ngFor="let p of products; index as i;">
+      <div class="card-container">
+        <mdb-card>
+          <!--Card image-->
+          <mdb-card-img src="https://dummyimage.com/350x250/000/fff" alt="Card image cap"></mdb-card-img>
+          <!--Card content-->
+          <mdb-card-body>
+            <!--Title-->
+            <mdb-card-title>
+              <h4>Title</h4>
+            </mdb-card-title>
+            <!--Text-->
+            <mdb-card-text> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+              of classical Latin literature from 45 BC, making it over 2000 years old.
+            </mdb-card-text>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+    </div>
+  </div>
+</div>
