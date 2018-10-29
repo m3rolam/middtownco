@@ -1,5 +1,34 @@
-<div class="box">
-  <app-navbar [selected]="'home'"></app-navbar>
-  <app-carousel style="flex: 1 auto;"></app-carousel>
-  <app-featured></app-featured>
-</div>
+<header class="h-100">
+  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav"
+    [containerInside]="false">
+    <mdb-navbar-brand>
+      <a class="navbar-brand" routerLink="/home">
+        LOGO
+      </a>
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav">
+        <li class="nav-item" [ngClass]="{'active': selected=='home'}">
+          <!-- <a class="nav-link waves-light" routerLink="/home" mdbWavesEffect>Home</a> -->
+        </li>
+        <li class="nav-item" [ngClass]="{'active': selected=='shop'}">
+          <a class="nav-link waves-light" routerLink="/shop" mdbWavesEffect>Shop</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active': selected=='about'}">
+          <a class="nav-link waves-light" routerLink="/about" mdbWavesEffect>About</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active': selected=='contact'}">
+          <a class="nav-link waves-light" routerLink="/contact" mdbWavesEffect>Contact</a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+  <div class="view">
+    <div class="mask rgba-black-light flex-center">
+      <div class="container text-center white-text">
+        <h1>Midd Town Co</h1>
+        <h3>Coming Soon...</h3>
+      </div>
+    </div>
+  </div>
+</header>

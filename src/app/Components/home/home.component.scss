@@ -1,5 +1,19 @@
-.box {
-  display: flex;
-  flex-flow: column;
-  height: 100%;
+.view {
+  background: url("https://www.goodfreephotos.com/albums/vietnam/saigon/night-skyline-saigon-vietnam.jpg")no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.top-nav-collapse {
+  background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+      background-color: #4285F4;
+  }
 }
